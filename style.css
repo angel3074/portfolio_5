@@ -38,9 +38,18 @@ body {
 }
 
 .section-width-max{
-  max-width: 800px;
+  width: 100%;
   margin: auto;
   padding: 1em;
+  display: flex;
+  gap: 3em;
+  flex-direction: column;
+}
+.dedo{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 h1{
@@ -111,6 +120,10 @@ margin-bottom: 1em;
   width: 70%;
 }
 
+.liltile{
+  display: flex;
+  justify-content: center
+}
 
 
 /* .icons img{
@@ -126,7 +139,16 @@ margin-bottom: 1em;
 .social img {
   width: 100%;
 } */
-@media(min-width: 1000px){
+
+@media(min-width: 800px){
+.main-content{
+  flex-direction: column;
+}
+.mypic{
+  min-width: 600px;
+}
+}
+@media(max-width: 1000px){
   .icons img{
     min-width: 30px;
   }
@@ -193,7 +215,6 @@ margin-bottom: 3em;
 
 .middle-part{
   background-color: var(--var-yellow);
-  height: 80%;
   width: 100%;
 }
 
@@ -210,8 +231,8 @@ margin-bottom: 3em;
 .habilidades{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
-  margin-bottom: 1em;
+  gap: 3em;
+  margin-bottom: 3em;
 }
 .flexThis{
   display: flex;
@@ -234,7 +255,8 @@ margin-bottom: 3em;
 .contact{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10em;
 
 }
 .next{
@@ -356,11 +378,12 @@ ul li{
   .main-content{
     display: flex;
     margin-top: 40px;
+    align-items: center;
   }
 }
 .portafolio{
   display: flex;
-  flex-direction: column;
+  flex-wrap: column;
   align-items: center;
 }
 .portafolioh2{
@@ -384,3 +407,29 @@ ul li{
 .main-title{
   margin-top: 30px;
 }
+
+.padre-experiencia-habilidades{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  justify-content: center;
+  gap: 10em;
+}
+
+.padre-habilidades{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.padre-habilidades h2{
+  margin-bottom: 1em;
+}
+hr{
+  border-bottom: #222222;
+}
+
