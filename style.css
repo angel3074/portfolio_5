@@ -68,8 +68,15 @@ h3{
 
 .second-title{
 color: var(--var-gray);
+display: flex;
+align-items: center;
+justify-content: center;
 margin-bottom: 1em;
+font-weight: 800;
 }
+
+.try{
+text-align: center;}
 
 .mypic{
   max-width: 200px;
@@ -303,9 +310,9 @@ ul li{
   list-style-type: none;
 }
 .nav-bar{
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  width: 100%;
+  width: 100%; */
 
   display: flex;
   padding: 1em;
@@ -321,10 +328,16 @@ ul li{
 .myBurger{
   cursor: pointer;
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .icon_burger_show{
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .nav-bar{
     display: block;
   }
+  
   ul {
     background-color:lightcoral ;
     position: absolute;
@@ -343,6 +356,7 @@ ul li{
   
   .show_menu{
     margin-top: 0;
+    display: hidden;
   }
 }
 
@@ -397,7 +411,7 @@ ul li{
 .nav-bar{
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: flex-end;
   position: fixed;
   z-index: 100;
   width: 100%;
