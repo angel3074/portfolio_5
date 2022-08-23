@@ -42,7 +42,7 @@ body {
   margin: auto;
   padding: 1em;
   display: flex;
-  gap: 3em;
+  gap: 1em;
   flex-direction: column;
 }
 .dedo{
@@ -64,7 +64,6 @@ h3{
   font-size: 20px;
   font-weight: 400;
 }
-
 
 .second-title{
 color: var(--var-gray);
@@ -227,8 +226,9 @@ margin-bottom: 3em;
 
 .toMakeFlex{
   display: flex;
-  justify-content: flex-start;
+  align-items: center;  
   gap: 2em;
+  flex-direction: row;
   
 }
 /* .experience{
@@ -426,11 +426,15 @@ ul li{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 3em;
   margin-bottom: 3em;
   justify-content: center;
-  gap: 10em;
+  gap: 2em;
+}
+
+.padre-experiencia-habilidades h2{
+  align-items: center;
 }
 
 .padre-habilidades{
