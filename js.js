@@ -16,6 +16,7 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
+
 // const ovejas = [
 //   { name: 'Noa', color: 'azul' },
 //   { name: 'Euge', color: 'rojo' },
